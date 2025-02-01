@@ -1,0 +1,154 @@
+body {
+    text-align: center;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 2rem;
+    background: linear-gradient(#0992c7, #ff0066);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, p {
+    text-shadow: 0 0 0.2rem black;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.gift-section {
+    margin-top: 50px;
+    padding: 0 1rem;
+}
+
+.gift-title {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.gift-hint {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.gift-img {
+    margin: 1.2rem auto;
+    max-width: 25rem;
+    width: 100%;
+    height: 25rem; 
+    border: 0.2rem solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-image: url("img/gift.png");
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 0.3s ease; 
+}
+
+#explain:hover,
+#genius:hover,
+#happy:hover,
+#out:hover,
+#physics:hover,
+#sad:hover {
+    background-size: contain; 
+}
+
+#explain:hover {
+    background-image: url("img/explain.gif");
+}
+
+#genius:hover {
+    background-image: url("img/genius.gif");
+}
+
+#happy:hover {
+    background-image: url("img/happy.gif");
+}
+
+#out:hover {
+    background-image: url("img/out.gif");
+}
+
+#physics:hover {
+    background-image: url("img/physics.gif");
+}
+
+#sad:hover {
+    background-image: url("img/sad.gif");
+}
+
+#rickroll {
+    background: rgb(247, 246, 246);
+    text-decoration: none;
+    border: 0.2rem solid black;
+    color: #bd0750;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 2rem;
+}
+
+#rickroll:hover {
+    background: #d1d1d1;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 1.5rem;
+    }
+
+    .gift-title {
+        font-size: 1.8rem;
+    }
+
+    .gift-hint {
+        font-size: 1.2rem;
+    }
+
+    .gift-img {
+        height: 20rem;
+    }
+
+    #rickroll {
+        font-size: 1.2rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 1.2rem;
+    }
+
+    .gift-title {
+        font-size: 1.5rem;
+    }
+
+    .gift-hint {
+        font-size: 1rem;
+    }
+
+    .gift-img {
+        height: 15rem;
+    }
+
+    #rickroll {
+        font-size: 1rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .gift-img:hover {
+        background-size: contain;
+    }
+    
+    /* Touchscreen devices */
+    @media (hover: none) and (pointer: coarse) {
+        .gift-img.touched {
+            background-size: contain;
+        }
+    }    
+}
